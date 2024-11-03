@@ -1,0 +1,30 @@
+.container {
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid gray;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.container button {
+    border:none;
+    background-color: rgb(0, 157, 255);
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 7px;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container button:active{
+    color: orange;
+}
+.exitBtn {
+    background-color: red !important;
+}

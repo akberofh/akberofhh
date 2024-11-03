@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    align-items: center;
+    background-color: #f3f3f3;
+    margin: 3px 0 3px 0;
+    border-radius: 7px;
+}
+.leftSide {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.rightSide {
+    width: 15%;
+    display: flex;
+    gap: 5px;
+}
+.rightSide input {
+    width: 70px;
+    outline: none;
+}
+.rightSide button {
+    width: 100px;
+    background-color: rgb(0, 157, 255);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.rightSide button:active {
+    background-color: blue;
+}

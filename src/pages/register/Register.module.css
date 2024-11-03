@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Yazı tipi */
+    background-color: #f7fafc; /* Arka plan rengi */
+    display: flex; /* Flexbox kullan */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    min-height: 100vh; /* Minimum yükseklik tam ekran */
+    margin: 0; /* Varsayılan margin'i kaldır */
+}
+
+.register-section {
+    width: 100%;
+    max-width: 640px; /* Maksimum genişlik */
+    padding: 2rem; /* İç boşluk */
+}
+
+.bg-white {
+    background-color: #ffffff; /* Beyaz arka plan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Yumuşak gölge */
+    border-radius: 10px; /* Köşeleri yuvarlak yap */
+    padding: 2rem; /* İç boşluk */
+    display: flex; /* Flexbox kullan */
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Yatay ortalama */
+}
+
+.text-5xl {
+    font-size: 2.5rem; /* Başlık boyutu */
+    font-weight: 800; /* Kalın yazı */
+    color: #1a202c; /* Koyu renk */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    margin-bottom: 1rem; /* Alt boşluk */
+}
+
+input {
+    border: 1px solid #d1d5db; /* Gri kenarlık */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Yuvarlak kenar */
+    transition: border-color 0.3s; /* Kenarlık rengi geçiş efekti */
+    width: 100%; /* Genişlik %100 */
+    max-width: 400px; /* Maksimum genişlik */
+    margin-bottom: 1rem; /* Alt boşluk */
+}
+
+input:focus {
+    border-color: #4f46e5; /* Mavi kenar rengi odaklandığında */
+    outline: none; /* Kenar kutusunu kaldır */
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.5); /* Mavi gölge */
+}
+
+button {
+    background-color: #3b82f6; /* Mavi arka plan */
+    color: white; /* Beyaz metin */
+    padding: 12px 24px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Yuvarlak kenar */
+    cursor: pointer; /* İmleç değiştirme */
+    transition: background-color 0.3s; /* Arka plan rengi geçiş efekti */
+    width: 100%; /* Genişlik %100 */
+    max-width: 400px; /* Maksimum genişlik */
+}
+
+button:hover {
+    background-color: #2563eb; /* Koyu mavi hover durumu */
+}
+
+button:disabled {
+    background-color: #93c5fd; /* Açık mavi disabled durumu */
+    cursor: not-allowed; /* İmleci değiştirme */
+}
+
+.login-redirect {
+    margin-top: 1rem; /* Üst boşluk */
+    color: #4b5563; /* Gri metin rengi */
+    cursor: pointer; /* İmleç değiştirme */
+    text-align: center; /* Metni ortala */
+}
+
+.login-redirect:hover {
+    text-decoration: underline; /* Alt çizgi */
+}
