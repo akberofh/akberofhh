@@ -90,40 +90,6 @@ const Register = () => {
             <div className="bg-white p-10 rounded-lg shadow-xl w-full max-w-5xl">
                 <h1 className="text-5xl font-extrabold mb-8 text-center text-gray-900">Qeydiyyat</h1>
                 <form onSubmit={handleRegister} className="space-y-8">
-                    <div className="flex justify-center mb-6">
-                        <label className="inline-flex items-center mr-6">
-                            <input
-                                type="radio"
-                                name="UserType"
-                                value="User"
-                                onChange={(e) => setUserType(e.target.value)}
-                                className="form-radio h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
-                            />
-                            <span className="ml-2 text-xl text-gray-700">User</span>
-                        </label>
-                        <label className="inline-flex items-center">
-                            <input
-                                type="radio"
-                                name="UserType"
-                                value="Admin"
-                                onChange={(e) => setUserType(e.target.value)}
-                                className="form-radio h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
-                            />
-                            <span className="ml-2 text-xl text-gray-700">Admin</span>
-                        </label>
-                    </div>
-                    {userType === "Admin" && (
-                        <div>
-                            <label className="block text-lg font-medium text-gray-700">Secret Key</label>
-                            <input
-                                type="text"
-                                placeholder="Secret Key"
-                                value={secretKey}
-                                onChange={(e) => setSecretKey(e.target.value)}
-                                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg"
-                            />
-                        </div>
-                    )}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         <div>
                             <label className="block text-lg font-medium text-gray-700">Ad</label>
